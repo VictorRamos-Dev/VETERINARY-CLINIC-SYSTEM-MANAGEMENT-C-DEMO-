@@ -1,0 +1,47 @@
+
+/*/////////////////////////////////////////////////////////////////////////
+                        Assignment 1 -  Reflection  Milestone 3
+Full Name  : Victor Ramos
+Student ID#: 127468221
+Email      : vade-lima-ramos@myseneca.ca
+Section    : NAA
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+/////////////////////////////////////////////////////////////////////////*/
+
+
+	
+		
+
+
+
+1.  
+void wholeNum(struct Appointment appoints[], int max)
+
+I created this function with the purpose to generate a concatenated integer value that represents the date and time information of each appointment of an array of Appointment structures and then storing each one in the (concatNum) member of each structure. The function accomplishes this by multiplying each element of date and time by a specific factor and afterwards adding them all together. This function is crucial in my code because it enables efficient sorting. 
+By converting the date and time data into a contented integer value, my function supplies a simplified way of comparing and sorting appointments, without the need of comparing each element of the date and time separately. This approach improves the readability and performance of the application.
+
+
+void sort(struct Appointment appoints[], int maxSize)
+
+This function was created to execute a vital role in the application’s capacity to manage and put on view appointments in a chronological way efficiently and effectively. By sorting the array of Appointment structs in ascending order based on their concatenated values that are stored in “concatNum” member, this function allows the user to see all appointments in an organized and logical order. Without going through the list of appointments, this function calls the “wholeNum” function, which for instance, transforms date and time into a concatenated integer value.
+The function sort provides a few benefits to this program and one of them is:
+-By using the selection sort, this function confirms that the array is being sorted in a time-efficient way, without using memory resources excessively. 
+
+void dateValidation(struct Date *date)
+
+This function was created to validate the date of an appointment from user input. It is crucial to validate how many days there will be in each month and it also takes into account if the month is February and the year is not a leap year; therefore, the number of days in January maybe 28 or 29. For other months, it validates if the number of the day is whether 30 or 31 days.
+
+
+2.
+The usage of scanf function can drive the code to errors and as well as they can cause a crash to the program if it is not being used correctly. Thus, minimizing the usage of scanf prevents the probability of the occurrence of these errors making the program more stable. Additionally, scanf functions might be at risk to buffer overflow. Reducing scanf function calls enhances the overall performance of the application. Using alternative input functions is very useful to minimize those errors. For example, alternatives input functions were used in order to avoid excessively scanf function calls, such as “dateValidation”, “inputPositive” and “inputRange” which handle input validation and error handling mechanism used in the program is designed in a modular and structured way to make sure each function is responsible for a unique type of validation, making easier debugging and maintaining the code.
+
+
+3.
+
+WholeNumber() and Sort() I put them under Utility Functions for a very specific reason, these functions are abstract, and they are frequently reusable throughout the code. These functions were designed to assist other functions inside larger programs, in addition, wholeNumber() and Sort() can make complex operations simpler by splitting them into more manageable and smaller tasks. To summarize, these functions are vital for my program development, and they provide better readability, modularity and maintainability. 
+
+dateValidation() I put it under User Input Function. This function makes the application receive input from the user, they are crucial to getting information that the applications require to perform specific operations. One of the most important things, when this function was used, is data validation. We have to consider that the user input can come in different forms and lengths, thus this function makes sure that the input is in the correct format and matches the requirements to be accepted.
